@@ -1,0 +1,190 @@
+/* using BEM CSS */
+
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+
+/* css variables */
+:root {
+    /* colour variables */
+
+    /*light purple*/
+    --purple-100: #852FA4;
+
+    /*dark purple used as bg colour*/
+    --black-100: #070713;
+
+    --grey-600: #141221;
+    --grey-100: #898989;
+
+    /* font size variables */
+    --font-sm: 1rem;
+    --font-lg: clamp(2rem, 2vw + 0.5rem, 40px);
+
+    /* inline paddings */
+    --padding-inline-sm: 1rem;
+    --padding-inline-md: max(10vw, 90px);
+    --padding-inline-lg: max(25vw, 100px);
+
+    /* block paddings */
+    --padding-block-sm: 1rem;
+}
+
+
+* {
+    font-family: Outfit, sans-serif;
+    /* overwrite css defaults for all elements */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-weight: 400;
+    color: white;
+    font-size: 1rem;
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    background-color: var(--black-100);
+}
+
+/* navbar styles */
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--padding-inline-sm);
+    top: 0;
+    z-index: 100;
+}
+
+.navbar__logo {
+    aspect-ratio: 0.9;
+    width: 90px;
+}
+
+.navbar__button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+}
+
+/* hero section styles */
+.hero-section {
+    position: relative;
+    text-align: center;
+}
+
+.hero-section__heading-title {
+    color: transparent;
+
+    font-size: clamp(2rem, 3vw + 1rem, 60px);
+
+    background: var(--purple-100) -webkit-gradient(linear, left top, right top, from(var(--purple-100)), to(var(--purple-100)), color-stop(0.5, #fff)) 0 0 no-repeat;
+
+    background-size: 100px;
+    -webkit-background-size: 100px;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    animation-name: shine;
+    -webkit-animation-name: shine;
+
+    animation-duration: 7s;
+    -webkit-animation-duration: 7s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+}
+
+
+@keyframes shine {
+
+    0%,
+    10% {
+        background-position: -1000px;
+    }
+
+    20% {
+        background-position: top left;
+    }
+
+    90% {
+        background-position: top right;
+    }
+
+    100% {
+        background-position: 1000px;
+    }
+}
+
+.hero-section__heading-subtitle {
+    font-size: clamp(2.5rem, 3vw + 1.5rem, 75px);
+    font-weight: 500;
+}
+
+.hero-section__text {
+    font-size: clamp(1rem, 1vw + 0.5rem, 25px);
+    padding-block: 0.5rem;
+    padding-inline: var(--padding-inline-lg);
+}
+
+.hero-section__image-wrapper {
+    background-color: var(--black-100);
+    background-image: url("assets/images/starBg-removebg-preview.png");
+    position: relative;
+    top: -40px;
+    z-index: -1;
+}
+
+.hero-section__image {
+    aspect-ratio: 2/1;
+    margin-block: 40px;
+    object-fit: cover;
+    width: 75%;
+}
+
+.hero-section__shape-divider {
+    bottom: 0;
+    left: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(180deg);
+    width: 100%;
+    z-index: 1;
+}
+
+.hero-section__shape-svg {
+    display: block;
+    height: 150px;
+    position: relative;
+    width: calc(100% + 1.3px);
+}
+
+.hero-section__shape-fill {
+    fill: var(--black-100);
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-section__text {
+        padding-inline: 0.7rem;
+    }
+
+    .hero-section__image {
+        width: 100%;
+    }
+
+}
