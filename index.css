@@ -45,6 +45,7 @@
     font-size: 1rem;
 }
 
+/* avoid nested css media queries to ensure browser compatibility */
 @media (prefers-reduced-motion) {
     * {
         scroll-behavior: auto;
@@ -178,6 +179,7 @@ body {
     fill: var(--black-100);
 }
 
+/* small devices like phones */
 @media only screen and (max-width: 600px) {
     .hero-section__text {
         padding-inline: 0.7rem;
@@ -193,7 +195,7 @@ body {
     padding-inline: var(--padding-inline-md);
     padding-block: var(--padding-block-sm);
 
-    /* phones */
+    /* phones and small devices */
     @media screen and (max-width: 600px) {
         padding-inline: 1.5rem;
     }
@@ -296,4 +298,68 @@ body {
     object-fit: cover;
     object-position: 0% 80%;
     width: 45px;
+}
+
+/* steps section styles */
+.steps-section {
+    border-block: 2px solid var(--purple-100);
+    text-align: center;
+}
+
+.steps-section__step-number {
+    color: var(--purple-100);
+    font-size: 1.5rem;
+}
+
+.steps-section__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1rem, 6vw + 0.3rem, 10rem);
+    justify-content: center;
+}
+
+.steps-section__step {
+    flex: 0 1 200px;
+}
+
+.steps-section__footer {
+    display: flex;
+    font-weight: 400;
+    gap: 10px;
+    justify-content: center;
+    margin-block: 2rem 0.5rem;
+    text-shadow: 0px 2px 10px var(--purple-100);
+}
+
+.steps-section__star-icon {
+    filter: drop-shadow(1px 1px var(--purple-100));
+    position: relative;
+}
+
+.steps-section__star-icon--2 {
+    left: -5px;
+    top: -20px;
+}
+
+.steps-section__star-icon--3 {
+    left: -10px;
+}
+
+@media screen and (max-width: 665px) {
+    .steps-section__star-icon--1 {
+        left: -40%;
+        top: -10%;
+    }
+
+    .steps-section__star-icon--2 {
+        display: none;
+    }
+}
+
+/* medium devices e.g some landscape tablets */
+@media screen and (max-width: 910px) {
+    .steps-section__star-icon--3 {
+        left: 20%;
+        top: -40%;
+    }
 }
