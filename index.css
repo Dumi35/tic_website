@@ -188,3 +188,47 @@ body {
     }
 
 }
+
+.section {
+    padding-inline: var(--padding-inline-md);
+    padding-block: var(--padding-block-sm);
+
+    /* phones */
+    @media screen and (max-width: 600px) {
+        padding-inline: 1.5rem;
+    }
+
+}
+
+.section__heading {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, white, var(--purple-100));
+    color: transparent;
+    font-size: var(--font-lg);
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.about-section {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(3rem, 5vw, 100px);
+    justify-content: center;
+    position: relative;
+}
+
+.about-section__content {
+    flex: 1 1 400px;
+}
+
+.about-section__image-wrapper {
+    flex: 0 1 300px;
+}
+
+.about-section__image {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
