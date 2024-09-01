@@ -15,6 +15,7 @@
 
     /*dark purple used as bg colour*/
     --black-100: #070713;
+    --bg-blur: #07071333;
 
     --grey-600: #141221;
     --grey-100: #898989;
@@ -54,6 +55,15 @@
 
 body {
     background-color: var(--black-100);
+}
+
+.header {
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    background-color: var(--bg-blur);
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 /* navbar styles */
