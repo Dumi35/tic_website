@@ -195,6 +195,10 @@ body {
         padding-inline: 0.7rem;
     }
 
+    .hero-section__image-wrapper{
+        top:0px;
+    }
+
     .hero-section__image {
         width: 100%;
     }
