@@ -195,8 +195,8 @@ body {
         padding-inline: 0.7rem;
     }
 
-    .hero-section__image-wrapper{
-        top:0px;
+    .hero-section__image-wrapper {
+        top: 0px;
     }
 
     .hero-section__image {
@@ -247,6 +247,37 @@ body {
     aspect-ratio: 1;
     object-fit: cover;
     width: 100%;
+}
+
+/* why join us section styles */
+.why-join-us-section {
+    text-align: center;
+}
+
+.why-join-us-section__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.why-join-us-section__card {
+    flex: 0 1 400px;
+}
+
+.why-join-us-section__card-content {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    box-shadow: 0 0px 5px var(--purple-100);
+    padding: 1rem;
+}
+
+.why-join-us-section__card-title {
+    font-size: 1.1rem;
+    margin-block: 1rem;
 }
 
 /* stream section of the site */
