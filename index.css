@@ -365,26 +365,27 @@ body {
 }
 
 .footer {
-    padding-inline: max(3vw, 2rem);
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding-block: 1rem;
+    padding-inline: max(3vw, 2rem);
 }
 
 .footer__content {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
 .footer__description {
-    flex: 0 1 500px;
     color: var(--grey-100);
+    flex: 0 1 500px;
 }
 
-.footer__divider, .footer__copyright {
+.footer__divider,
+.footer__copyright {
     color: var(--grey-100);
 }
 
