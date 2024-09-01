@@ -55,6 +55,7 @@
 
 body {
     background-color: var(--black-100);
+    background-image: url("assets/images/starBg-removebg-preview.png");
 }
 
 .header {
@@ -153,8 +154,6 @@ body {
 }
 
 .hero-section__image-wrapper {
-    background-color: var(--black-100);
-    background-image: url("assets/images/starBg-removebg-preview.png");
     position: relative;
     top: -40px;
     z-index: -1;
@@ -165,28 +164,6 @@ body {
     margin-block: 40px;
     object-fit: cover;
     width: 75%;
-}
-
-.hero-section__shape-divider {
-    bottom: 0;
-    left: 0;
-    line-height: 0;
-    overflow: hidden;
-    position: absolute;
-    transform: rotate(180deg);
-    width: 100%;
-    z-index: 1;
-}
-
-.hero-section__shape-svg {
-    display: block;
-    height: 150px;
-    position: relative;
-    width: calc(100% + 1.3px);
-}
-
-.hero-section__shape-fill {
-    fill: var(--black-100);
 }
 
 /* small devices like phones */
