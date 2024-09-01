@@ -89,6 +89,11 @@ body {
     color: white;
     padding: 0.3rem 1rem;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar__button:hover{
+    background: var(--grey-600);
 }
 
 /* hero section styles */
