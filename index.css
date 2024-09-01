@@ -208,12 +208,13 @@ body {
 .section {
     padding-inline: var(--padding-inline-md);
     padding-block: var(--padding-block-sm);
+}
 
-    /* phones and small devices */
-    @media screen and (max-width: 600px) {
+/* phones and small devices */
+@media screen and (max-width: 600px) {
+    .section {
         padding-inline: 1.5rem;
     }
-
 }
 
 .section__heading {
