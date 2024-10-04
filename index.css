@@ -82,6 +82,18 @@ body {
     width: 90px;
 }
 
+.navbar__link{
+   
+    color: white;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar__link:hover{
+    background: var(--purple-100);
+    border-radius: 20px;
+}
 .navbar__button {
     background: transparent;
     border: 1px solid white;
