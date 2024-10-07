@@ -82,18 +82,35 @@ body {
     width: 90px;
 }
 
-.navbar__link{
-   
+.navbar__link {
     color: white;
-    padding: 0.3rem 1rem;
+    display: inline-block;
+    padding: 0.3rem;
+    position: relative;
     text-decoration: none;
     cursor: pointer;
 }
 
-.navbar__link:hover{
-    background: var(--purple-100);
-    border-radius: 20px;
+.navbar__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--purple-100);
 }
+
+.navbar__link:hover::after {
+    animation: grow 0.3s forwards ease-in-out;
+}
+
+@keyframes grow {
+    to {
+        width: 100%;
+    }
+}
+
 .navbar__button {
     background: transparent;
     border: 1px solid white;
@@ -104,7 +121,7 @@ body {
     cursor: pointer;
 }
 
-.navbar__button:hover{
+.navbar__button:hover {
     background: var(--grey-600);
 }
 
