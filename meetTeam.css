@@ -1,0 +1,51 @@
+/* Meet the team styling */
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    place-content: center;
+    place-items: center;
+}
+
+/* Styling for team member cards */
+.team-grid__member {
+    align-items: center;
+    /* Make circular */
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+    /* Added transition for shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.team-grid__member:hover {
+    /* Shadow effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.team-grid__photo {
+    /* Make photo circular */
+    border-radius: 50%;
+    height: 60%;
+    /* Set to fill the circular card */
+    /* Use cover to maintain aspect ratio */
+    object-fit: cover;
+    width: 60%;
+
+}
+
+.team-grid__member-name {
+    font-size: 1.5rem;
+    margin: 10px 0;        
+}
+
+.team-grid__member-role {
+    color: #777;
+}
