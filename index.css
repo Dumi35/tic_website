@@ -395,7 +395,7 @@ body {
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
-    object-position: 0% 80%;
+    object-position: 50%;
     width: 45px;
 }
 
