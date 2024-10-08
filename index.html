@@ -16,11 +16,18 @@
     <header class="header">
         <nav class="navbar">
             <!-- club logo -->
-            <img src="assets/images/ticLogoTransparent.png" alt="TIC Logo" class="navbar__logo" />
-            <a href="index.html" class="navbar__link" id="navbar__link">Home</a>
-            <a href="meetTeam.html" class="navbar__link" id="navbar__link">Excos</a>
-            <a href="meetTeam.html" class="navbar__link" id="navbar__link">Gallery</a>
-            <button type="button" class="navbar__button" id="navbar__button" onclick="scrollToElement('steps')">Join the club</button>
+            <div class="navbar__header">
+                <img src="assets/icons/menu.svg" alt="menu" class="navbar__menu-btn" onclick="toggleNavbarMenu()">
+                <img src="assets/images/ticLogoTransparent.png" alt="TIC Logo" class="navbar__logo" />
+            </div>
+            <div class="navbar__menu" id="navbar__menu">
+                <a href="index.html" class="navbar__link" id="navbar__link">Home</a>
+                <a href="index.html" class="navbar__link" id="navbar__link" href="index.html#about">About</a>
+                <a href="meetTeam.html" class="navbar__link" id="navbar__link">Excos</a>
+                <a href="meetTeam.html" class="navbar__link" id="navbar__link">Events</a>
+            </div>
+            <a type="button" class="navbar__button" id="navbar__button" href="index.html#steps">Join the
+                club</a>
         </nav>
     </header>
 
@@ -50,7 +57,7 @@
         </section>
 
         <!-- about the TIC club -->
-        <section class="section about-section">
+        <section class="section about-section" id="about">
             <div class="about-section__content">
                 <h3 class="section__heading">About</h3>
                 <p class="about-section__text">
@@ -75,30 +82,36 @@
 
             <div class="why-join-us-section__flex">
                 <div class="why-join-us-section__card">
-                    <div class="why-join-us-section__card-content animate__animated animate__slow" data-animation="animate__fadeInUp">
-                        <img src="assets/icons/mdi_computer.svg" alt=" "/>
+                    <div class="why-join-us-section__card-content animate__animated animate__slow"
+                        data-animation="animate__fadeInUp">
+                        <img src="assets/icons/mdi_computer.svg" alt=" " />
                         <h3 class="why-join-us-section__card-title">Hands-on Learning</h3>
                         <p class="why-join-us-section__card-description">
-                            Gain practical experience through workshops, hackathons, and real-world projects that enhance your skills and prepare you for the tech industry.
+                            Gain practical experience through workshops, hackathons, and real-world projects that
+                            enhance your skills and prepare you for the tech industry.
                         </p>
                     </div>
                 </div>
 
                 <div class="why-join-us-section__card">
-                    <div class="why-join-us-section__card-content animate__animated animate__slow" data-animation="animate__fadeInUp">
-                        <img src="assets/icons/networking.svg" alt=" "/>
+                    <div class="why-join-us-section__card-content animate__animated animate__slow"
+                        data-animation="animate__fadeInUp">
+                        <img src="assets/icons/networking.svg" alt=" " />
                         <h3 class="why-join-us-section__card-title">Networking Opportunities</h3>
                         <p class="why-join-us-section__card-description">
-                            Connect with industry professionals, alumni, and fellow students to expand your professional network and open doors to future opportunities.
+                            Connect with industry professionals, alumni, and fellow students to expand your professional
+                            network and open doors to future opportunities.
                         </p>
                     </div>
                 </div>
                 <div class="why-join-us-section__card">
-                    <div class="why-join-us-section__card-content animate__animated animate__slow" data-animation="animate__fadeInUp">
-                        <img src="assets/icons/mentor.svg" alt=" "/>
+                    <div class="why-join-us-section__card-content animate__animated animate__slow"
+                        data-animation="animate__fadeInUp">
+                        <img src="assets/icons/mentor.svg" alt=" " />
                         <h3 class="why-join-us-section__card-title">Mentorship</h3>
                         <p class="why-join-us-section__card-description">
-                            Access mentorship from experienced members and faculty to help you navigate your tech journey and achieve your goals.
+                            Access mentorship from experienced members and faculty to help you navigate your tech
+                            journey and achieve your goals.
                         </p>
                     </div>
                 </div>
@@ -264,17 +277,23 @@
             <!-- congratulatory message on finishing the steps -->
             <div class="steps-section__footer">
                 <div class="steps-section__icons">
-                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--1" alt="" />
-                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--2" alt="" />
-                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--3" alt="" />
+                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--1"
+                        alt="" />
+                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--2"
+                        alt="" />
+                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--3"
+                        alt="" />
                 </div>
                 <p>
                     Upon addition to the community, you have become a member of the club.
                 </p>
                 <div class="steps-section__icons">
-                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--1" alt="" />
-                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--2" alt="" />
-                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--3" alt="" />
+                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--1"
+                        alt="" />
+                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--2"
+                        alt="" />
+                    <img src="assets/icons/star-shine.svg" class="steps-section__star-icon steps-section__star-icon--3"
+                        alt="" />
                 </div>
             </div>
         </section>

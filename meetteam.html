@@ -13,12 +13,18 @@
   <header class="header">
     <nav class="navbar">
       <!-- club logo -->
-      <img src="assets/images/ticLogoTransparent.png" alt="TIC Logo" class="navbar__logo" />
-      <a href="index.html" class="navbar__link" id="navbar__link">Home</a>
-      <a href="meetTeam.html" class="navbar__link" id="navbar__link">Excos</a>
-      <a href="meetTeam.html" class="navbar__link" id="navbar__link">Gallery</a>
-      <a href="index.html" class="navbar__button" id="navbar__button" onclick="scrollToElement('steps')">Join the club
-      </a>
+      <div class="navbar__header">
+        <img src="assets/icons/menu.svg" alt="menu" class="navbar__menu-btn" onclick="toggleNavbarMenu()">
+        <img src="assets/images/ticLogoTransparent.png" alt="TIC Logo" class="navbar__logo" />
+      </div>
+      <div class="navbar__menu" id="navbar__menu">
+        <a href="index.html" class="navbar__link" id="navbar__link">Home</a>
+        <a href="index.html" class="navbar__link" id="navbar__link" href="index.html#about">About</a>
+        <a href="meetTeam.html" class="navbar__link" id="navbar__link">Excos</a>
+        <a href="meetTeam.html" class="navbar__link" id="navbar__link">Events</a>
+      </div>
+      <a type="button" class="navbar__button" id="navbar__button" href="index.html#steps">Join the
+        club</a>
     </nav>
   </header>
 
@@ -45,87 +51,87 @@
     <section class="section">
       <div class="team-grid">
         <div class="team-grid__member">
-            <img src="assets/images/oselumeseAvatar.jpg" alt="Oselumese Agbonrofo" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Oselumese Agbonrofo</h2>
-            <p class="team-grid__member-role">President</p>
+          <img src="assets/images/oselumeseAvatar.jpg" alt="Oselumese Agbonrofo" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Oselumese Agbonrofo</h2>
+          <p class="team-grid__member-role">President</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/adetonaAvatar.jpg" alt="Adetona Adegbite" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Adetona Adegbite</h2>
-            <p class="team-grid__member-role">Vice President/Mobile Development Lead</p>
+          <img src="assets/images/adetonaAvatar.jpg" alt="Adetona Adegbite" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Adetona Adegbite</h2>
+          <p class="team-grid__member-role">Vice President/Mobile Development Lead</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/karolAvatar.jpg" alt="Karol Okoede" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Karol Okoede</h2>
-            <p class="team-grid__member-role">Software Lead</p>
+          <img src="assets/images/karolAvatar.jpg" alt="Karol Okoede" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Karol Okoede</h2>
+          <p class="team-grid__member-role">Software Lead</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/onyedikaAvatar.jpg" alt="Onyedika Igwe" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Onyedika Igwe</h2>
-            <p class="team-grid__member-role">Engineering Lead/Co-Embedded Systems/Robotics Lead</p>
+          <img src="assets/images/onyedikaAvatar.jpg" alt="Onyedika Igwe" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Onyedika Igwe</h2>
+          <p class="team-grid__member-role">Engineering Lead/Co-Embedded Systems/Robotics Lead</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/oladimejiAvatar.jpg" alt="Oladimeji Abaniwonnda" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Oladimeji Abaniwonnda</h2>
-            <p class="team-grid__member-role">Project Manager</p>
+          <img src="assets/images/oladimejiAvatar.jpg" alt="Oladimeji Abaniwonnda" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Oladimeji Abaniwonnda</h2>
+          <p class="team-grid__member-role">Project Manager</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/adebimpeAvatar.jpg" alt="Adebimpe Adetoba" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Adebimpe Adetoba</h2>
-            <p class="team-grid__member-role">Protocol Officer</p>
+          <img src="assets/images/adebimpeAvatar.jpg" alt="Adebimpe Adetoba" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Adebimpe Adetoba</h2>
+          <p class="team-grid__member-role">Protocol Officer</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/onyinyeAvatar.jpg" alt="Onyinye Okoji" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Onyinye Okoji</h2>
-            <p class="team-grid__member-role">Social Media Manager</p>
+          <img src="assets/images/onyinyeAvatar.jpg" alt="Onyinye Okoji" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Onyinye Okoji</h2>
+          <p class="team-grid__member-role">Social Media Manager</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/nmesomaAvatar.jpg" alt="Nmesoma Onyeka" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Nmesoma Onyeka</h2>
-            <p class="team-grid__member-role">Assistant Social Media Manager</p>
+          <img src="assets/images/nmesomaAvatar.jpg" alt="Nmesoma Onyeka" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Nmesoma Onyeka</h2>
+          <p class="team-grid__member-role">Assistant Social Media Manager</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/etomchukwuAvatar.jpg" alt="Etomchukwu Bobby-Umeano" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Etomchukwu Bobby-Umeano</h2>
-            <p class="team-grid__member-role">Assistant Project Manager</p>
+          <img src="assets/images/etomchukwuAvatar.jpg" alt="Etomchukwu Bobby-Umeano" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Etomchukwu Bobby-Umeano</h2>
+          <p class="team-grid__member-role">Assistant Project Manager</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/dumebiAvatar.jpg" alt="Dumebi Duru" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Dumebi Duru</h2>
-            <p class="team-grid__member-role">Web Development Lead</p>
+          <img src="assets/images/dumebiAvatar.jpg" alt="Dumebi Duru" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Dumebi Duru</h2>
+          <p class="team-grid__member-role">Web Development Lead</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/chimaAvatar.jpg" alt="Chima Okwuokei" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Chima Okwuokei</h2>
-            <p class="team-grid__member-role">Embedded Systems/Robotics Lead</p>
+          <img src="assets/images/chimaAvatar.jpg" alt="Chima Okwuokei" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Chima Okwuokei</h2>
+          <p class="team-grid__member-role">Embedded Systems/Robotics Lead</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/michaelAvatar.jpg" alt="Michael Iloba" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Michael Iloba</h2>
-            <p class="team-grid__member-role">Data Science Lead</p>
+          <img src="assets/images/michaelAvatar.jpg" alt="Michael Iloba" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Michael Iloba</h2>
+          <p class="team-grid__member-role">Data Science Lead</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/omotayoAvatar.jfif" alt="Omotayo Ayeni" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Omotayo Ayeni</h2>
-            <p class="team-grid__member-role">UI/UX Design Lead</p>
+          <img src="assets/images/omotayoAvatar.jfif" alt="Omotayo Ayeni" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Omotayo Ayeni</h2>
+          <p class="team-grid__member-role">UI/UX Design Lead</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/marvelousAvatar.jpg" alt="Marvelous Edoho" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Marvelous Edoho</h2>
-            <p class="team-grid__member-role">Cybersecurity Lead</p>
+          <img src="assets/images/marvelousAvatar.jpg" alt="Marvelous Edoho" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Marvelous Edoho</h2>
+          <p class="team-grid__member-role">Cybersecurity Lead</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/clementAvatar.jpg" alt="Clement Obieke" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Clement Obieke</h2>
-            <p class="team-grid__member-role">Game Development Lead</p>
+          <img src="assets/images/clementAvatar.jpg" alt="Clement Obieke" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Clement Obieke</h2>
+          <p class="team-grid__member-role">Game Development Lead</p>
         </div>
         <div class="team-grid__member">
-            <img src="assets/images/miracleAvatar.jpg" alt="Miracle Nnadiukwu" class="team-grid__photo" />
-            <h2 class="team-grid__member-name">Miracle Nnadiukwu</h2>
-            <p class="team-grid__member-role">Assistant Mobile Development Lead</p>
+          <img src="assets/images/miracleAvatar.jpg" alt="Miracle Nnadiukwu" class="team-grid__photo" />
+          <h2 class="team-grid__member-name">Miracle Nnadiukwu</h2>
+          <p class="team-grid__member-role">Assistant Mobile Development Lead</p>
         </div>
-    </div>
-      
+      </div>
+
     </section>
 
   </main>
