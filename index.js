@@ -1,10 +1,16 @@
 // scroll to element with id on page
-function scrollToElement(elementId) {
-    var element = document.getElementById(elementId);
-    element.scrollIntoView({
-        block: 'nearest',
-    });
-}
+window.addEventListener('load', () => {
+    const hash = window.location.hash;  // Get the hash part of the URL
+    if (hash) {
+        const elementId = hash.substring(1); // Remove the '#' from the hash
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.scrollIntoView({
+                block: 'nearest'     // Adjust alignment as needed
+            });
+        }
+    }
+});
 
 /* Animate on reaching element */
 const observer = new IntersectionObserver(entries => {
@@ -36,3 +42,8 @@ if (!prefersReducedMotion) {
     });
 }
 
+const navbarMenu = document.getElementById("navbar__menu")
+
+function toggleNavbarMenu() {
+    navbarMenu.classList.toggle('active');
+}
