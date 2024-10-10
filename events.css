@@ -1,5 +1,6 @@
 /* Carousel container styling */
 .swiper-container {
+  height: 500px;
     width: 100%;
     max-width: 400px; 
     margin: 0 15px; 
@@ -11,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-right: 200px; */
+    
   }
   
   /* Styles each swiper slide */
@@ -19,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px; 
+    height: auto; 
     margin: 0 300px
 }
 
@@ -27,7 +28,6 @@
 .swiper-group{
   display: flex;
   flex-direction: row;
-  
 }
   
   /* Image styling */
@@ -38,25 +38,13 @@
     max-height: 100%;
     max-width: 100%;
     border-radius: 5px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     
   }
-  
-  
-  /* Adjust pagination dots */
-  /* .swiper-pagination {
-    bottom: 20px;
-  } */
-  
-  /* .swiper-pagination-bullet {
-    background-color: #150236; 
-    opacity: 1;
-  } */
-  
-  /* Adjust navigation arrows */
-  /* .swiper-button-next,
-  .swiper-button-prev {
-    color: #333; 
+  .swiper-group-text{
+    padding: 20px;
   }
-   */
+  .swiper-group p{
+    width: 500px;
+  }
+  
   
