@@ -254,6 +254,7 @@
 
 .swiper-virtual .swiper-slide {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   transform: translateZ(0)
 }
 
@@ -796,15 +797,46 @@ button.swiper-pagination-bullet {
 
 .swiper-slide {
   display: flex;
-  gap: 0.5rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.event-title{
+.event-about{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.event-about__decorator{
+  width: 30px;
+  height: 8px;
+  background: var(--purple-100);
+  border-radius: 10px ;
+  display: inline-block;
+}
+.event-title {
   font-size:var(--font-lg);
 }
+.event-info{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+
+.event-info__date-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.event-info__location{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.5rem;
+}
+
 /* Image styling */
 .swiper-slide-div-img {
   flex: 1 1 300px;
@@ -819,7 +851,6 @@ button.swiper-pagination-bullet {
 
 .swiper-group-text {
   flex: 1 1 400px;
-  border: 2px solid pink;
   display: flex;
   flex-direction: column;
   gap: 1rem;

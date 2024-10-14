@@ -8,6 +8,10 @@ const swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
     grabCursor: true,
     slidesPerView: 1, // Shows one slide at a time
   });
