@@ -1,148 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="events.css" />
-    <!-- this includes swiper.js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <title>Events</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="events.css" />
+  <!-- this includes swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <title>Events</title>
 </head>
+
 <body>
-    <header class="header">
-      <nav class="navbar">
-        <!-- club logo -->
-        <div class="navbar__header">
-          <img src="assets/icons/menu.svg" alt="menu" class="navbar__menu-btn" onclick="toggleNavbarMenu()">
-          <img src="assets/images/ticLogoTransparent.png" alt="TIC Logo" class="navbar__logo" />
-        </div>
-        <div class="navbar__menu" id="navbar__menu">
-          <a href="index.html" class="navbar__link" id="navbar__link">Home</a>
-          <a href="index.html" class="navbar__link" id="navbar__link" href="index.html#about">About</a>
-          <a href="meetTeam.html" class="navbar__link" id="navbar__link">Excos</a>
-          <a href="events.html" class="navbar__link" id="navbar__link">Events</a>
-        </div>
-        <a type="button" class="navbar__button" id="navbar__button" href="index.html#steps">Join the
-          club</a>
-      </nav>
-    </header>
-  
-    <main>
-        <section id="events" class="hero-section">
-            <div class="hero-section__content">
-              <!-- hero heading -->
-              <div class="hero-section__heading">
-                <h3 class="hero-section__heading-title">Upcoming </h3>
-                <h1 class="hero-section__heading-subtitle text-paragraph">Events
-                </h1>
-              </div>
-      
-              <!-- hero-text -->
-              <div class="hero-section__text">
-                <p class="text-paragraph">Check out past and upcoming events for the club.
-                </p>
-              </div>
-            </div>
-          </section>
-
-        <section class="section">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-group">
-                            <img src="assets/images/event_img/etomchukwuAvatar.jpeg" alt="Etomchukwu Avatar" class="" />
-                           <div class="swiper-group-text">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                 Rem facere magni corporis repellendus, doloremque odio dignissimos eum tenetur ut ipsa beatae doloribus inventore dicta esse excepturi fugiat tempora aperiam deleniti.
-                              Velit quo nam, est doloribus deleniti dolor quasi sunt, voluptate vel dolores debitis nesciunt! Provident cupiditate sequi corrupti, dolores nihil dignissimos est vel beatae dolorem laudantium, ipsam, reiciendis nobis unde?
-                              Quae eius odit nesciunt odio vel quasi corporis laboriosam et culpa perspiciatis? Quae ullam libero cumque, provident officiis minima aut eveniet rem aspernatur illo, sequi impedit voluptates? Fugiat, soluta optio?
-                              Iste perferendis blanditiis repellat consequuntur sit similique nostrum, totam aut animi consequatur vel cum aperiam dolores rerum corporis rem deleniti, dolorem voluptatibus dolor doloremque consectetur facere incidunt at. Mollitia, officia.</p>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-group">
-                            <img src="assets/images/event_img/etomchukwuAvatar.jpeg" alt="Etomchukwu Avatar" class="" />
-                            <div class="swiper-group-text">
-                              <p>Second..
-                                 Rem facere magni corporis repellendus, doloremque odio dignissimos eum tenetur ut ipsa beatae doloribus inventore dicta esse excepturi fugiat tempora aperiam deleniti.
-                              Velit quo nam, est doloribus deleniti dolor quasi sunt, voluptate vel dolores debitis nesciunt! Provident cupiditate sequi corrupti, dolores nihil dignissimos est vel beatae dolorem laudantium, ipsam, reiciendis nobis unde?
-                              Quae eius odit nesciunt odio vel quasi corporis laboriosam et culpa perspiciatis? Quae ullam libero cumque, provident officiis minima aut eveniet rem aspernatur illo, sequi impedit voluptates? Fugiat, soluta optio?
-                              Iste perferendis blanditiis repellat consequuntur sit similique nostrum, totam aut animi consequatur vel cum aperiam dolores rerum corporis rem deleniti, dolorem voluptatibus dolor doloremque consectetur facere incidunt at. Mollitia, officia.</p>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-group">
-                            <img src="assets/images/event_img/etomchukwuAvatar.jpeg" alt="Etomchukwu Avatar" class="" />
-                            <div class="swiper-group-text">
-                              <p>Last.
-                                 Rem facere magni corporis repellendus, doloremque odio dignissimos eum tenetur ut ipsa beatae doloribus inventore dicta esse excepturi fugiat tempora aperiam deleniti.
-                              Velit quo nam, est doloribus deleniti dolor quasi sunt, voluptate vel dolores debitis nesciunt! Provident cupiditate sequi corrupti, dolores nihil dignissimos est vel beatae dolorem laudantium, ipsam, reiciendis nobis unde?
-                              Quae eius odit nesciunt odio vel quasi corporis laboriosam et culpa perspiciatis? Quae ullam libero cumque, provident officiis minima aut eveniet rem aspernatur illo, sequi impedit voluptates? Fugiat, soluta optio?
-                              Iste perferendis blanditiis repellat consequuntur sit similique nostrum, totam aut animi consequatur vel cum aperiam dolores rerum corporis rem deleniti, dolorem voluptatibus dolor doloremque consectetur facere incidunt at. Mollitia, officia.</p>
-                           </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </section>
-        
-        <section>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, modi amet nemo fugiat voluptate ratione, ipsa in quos dolore molestiae pariatur. Expedita inventore omnis adipisci corrupti vel suscipit veniam vero!
-            Nulla, dolorum veritatis minima, accusantium corrupti reprehenderit accusamus aliquam harum, quidem iure corporis distinctio! Amet expedita deleniti atque neque, minima assumenda, beatae in incidunt eius, ex facere sint mollitia saepe.
-            Laborum facere eaque sit ex molestiae. In temporibus iusto dolore alias neque sapiente at sed totam, fugiat nesciunt unde dolorem exercitationem provident veniam a harum adipisci necessitatibus illum ipsum porro!
-            Sit officia cupiditate aut! Quia suscipit id repellendus ducimus aliquid, dolore mollitia dolorum cum voluptate reiciendis minus pariatur commodi qui et consequuntur doloribus obcaecati. Natus minus quo ipsum rem repellendus.
-            Eligendi soluta molestias quasi fugit! Voluptatibus labore eos soluta eligendi maiores. Impedit molestiae iusto magni temporibus earum doloremque iure cum voluptatem ipsa tempora laboriosam corporis, dolor obcaecati porro placeat id!
-            Sapiente possimus tempore explicabo temporibus nihil iste perspiciatis, laboriosam dolorum debitis eum perferendis vero minima corrupti laborum inventore molestiae ullam, adipisci magni hic quis, labore qui. Aliquid est temporibus ad?
-            Doloribus dignissimos accusantium dicta doloremque delectus, voluptatem illo at fugit reiciendis consectetur voluptatum quo nesciunt dolorum culpa repellat magnam maiores natus numquam odio voluptate ex cum vitae ad impedit! Molestias?
-            Reiciendis voluptas temporibus, iste facilis iusto illum, consequatur quibusdam incidunt molestias veniam voluptate quasi quo amet delectus libero perspiciatis! Quidem enim veniam magni? Magni voluptate, quas nostrum incidunt reprehenderit eos.
-            Quae aspernatur inventore iusto magni repellendus autem voluptatum veniam fuga facere repellat, neque quibusdam impedit odio porro facilis nisi cumque nemo asperiores culpa accusantium magnam omnis. Nemo necessitatibus suscipit voluptatum.
-            Tenetur temporibus culpa aspernatur, rem iste laboriosam minus dolorem, quos distinctio a harum. Exercitationem deleniti sed pariatur numquam repudiandae hic ipsam unde, praesentium aspernatur consequatur temporibus, doloribus sunt ratione aliquid.
-            Quo, debitis perspiciatis sint aspernatur in quae non? Quisquam adipisci commodi, minima eos alias illum accusamus, nemo ea temporibus doloremque eaque aperiam laboriosam asperiores repudiandae minus fugiat voluptates debitis. Voluptate?
-            Quas quo, soluta distinctio dicta quos amet ullam, cupiditate accusantium culpa nisi quidem provident ut itaque accusamus at. In qui commodi beatae aperiam modi error amet corporis possimus est at.
-            Accusamus id temporibus doloribus. Laborum nostrum, ratione expedita magnam, totam at, debitis culpa excepturi nam iure officia suscipit eligendi pariatur consectetur corrupti ab aliquid rem. Inventore saepe quidem quaerat! Tenetur!
-            Dolore distinctio doloremque vel! Pariatur similique officia ipsam veritatis sequi cum quibusdam ipsa nesciunt, iusto at labore doloribus est deleniti nemo minus. Sequi repudiandae beatae dignissimos, ea atque saepe nihil!
-            Voluptates quos sequi, unde repellat quia mollitia ea voluptate culpa a vel eum accusamus doloribus, dolores sunt cumque molestiae numquam alias ipsum! Illo facere iusto natus officia nostrum delectus consectetur.
-            Harum earum suscipit vero reiciendis nihil maiores cupiditate necessitatibus magni illum totam, ratione veritatis praesentium dolores, optio debitis ullam! Nihil consequatur, illo voluptatum similique inventore quasi odio at molestias eaque!
-            Eligendi temporibus accusamus omnis dolor aliquam magnam alias similique voluptatem cum consequatur. Necessitatibus error, tempore fuga cum ea fugit dolor, assumenda doloribus quisquam repellat quos numquam, non doloremque. Cupiditate, provident?
-            Ullam non totam in cumque repudiandae iusto voluptates doloremque nesciunt consequuntur molestiae, quae, provident minus ducimus accusamus natus? Placeat vitae voluptatibus a dolor rerum maiores modi aperiam enim distinctio ea?
-        </section>
-    </main>
-  
-    <footer class="footer">
-      <div class="footer__content">
-        <img src="assets/images/ticLogoTransparent.png" alt="TIC Logo">
-        <p class="footer__description">
-          Whether you're passionate about emerging technologies, coding, or robotics, our club offers a platform
-          for you to learn, innovate, and make a meaningful impact.
-        </p>
+  <header class="header">
+    <nav class="navbar">
+      <!-- club logo -->
+      <div class="navbar__header">
+        <img src="assets/icons/menu.svg" alt="menu" class="navbar__menu-btn" onclick="toggleNavbarMenu()">
+        <img src="assets/images/ticLogoTransparent.png" alt="TIC Logo" class="navbar__logo" />
       </div>
-  
-      <!-- club social media links -->
-      <div class="footer__links">
-        <a href="https://www.linkedin.com/company/technology-innovation-club/" target="_blank"><img
-            src="assets/icons/linkedin-fill.svg" alt="LinkedIn" /></a>
-        <a href="https://www.instagram.com/tech_innovation_club?igsh=c25nbHBxcXp3eXVr" target="_blank"><img
-            src="assets/icons/instagram.svg" alt="Instagram" /></a>
-        <a href="https://x.com/tic_pau" target="_blank"><img src="assets/icons/devicon_twitter.svg" alt="Twitter" /></a>
-        <a href="https://github.com/Technology-Innovation-Club" target="_blank"><img src="assets/icons/codicon_github.svg"
-            alt="Github" /></a>
+      <div class="navbar__menu" id="navbar__menu">
+        <a href="index.html" class="navbar__link" id="navbar__link">Home</a>
+        <a href="index.html" class="navbar__link" id="navbar__link" href="index.html#about">About</a>
+        <a href="meetTeam.html" class="navbar__link" id="navbar__link">Excos</a>
+        <a href="events.html" class="navbar__link" id="navbar__link">Events</a>
       </div>
-  
-      <hr class="footer__divider" />
-      <p class="footer__copyright">&copy; 2024 Tech Innovation Club</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
-    <script src="events.js"></script>
-  </body>
-  
+      <a type="button" class="navbar__button" id="navbar__button" href="index.html#steps">Join the
+        club</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="events" class="hero-section">
+      <div class="hero-section__content">
+        <!-- hero heading -->
+        <div class="hero-section__heading">
+          <h3 class="hero-section__heading-title">Upcoming </h3>
+          <h1 class="hero-section__heading-subtitle text-paragraph">Events
+          </h1>
+        </div>
+
+        <!-- hero-text -->
+        <div class="hero-section__text">
+          <p class="text-paragraph">Check out past and upcoming events for the club.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectio">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide section">
+            <div class="swiper-slide-div-img">
+              <img src="assets/images/event_img/hackathon2024Flyer.jpg" alt="Etomchukwu Avatar" class="swiper-slide-img" />
+            </div>
+            <div class="swiper-group-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Rem facere magni corporis repellendus, doloremque odio dignissimos eum tenetur ut ipsa beatae
+                doloribus inventore dicta esse excepturi fugiat tempora aperiam deleniti.
+                Velit quo nam, est doloribus deleniti dolor quasi sunt, voluptate vel dolores debitis nesciunt!
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide section">
+            <div class="swiper-slide-div-img">
+              <img src="assets/images/event_img/hackathon2024Flyer.jpg" alt="Etomchukwu Avatar" class="swiper-slide-img" />
+            </div>            <div class="swiper-group-text">
+            <p>Second..
+              Rem facere magni corporis repellendus, doloremque odio dignissimos eum tenetur ut ipsa beatae doloribus
+              inventore dicta esse excepturi fugiat tempora aperiam deleniti.
+              Velit quo nam, est doloribus deleniti dolor quasi sunt, voluptate vel dolores debitis nesciunt!
+              Provident cupiditate sequi corrupti, dolores nihil dignissimos est vel beatae dolorem laudantium, ipsam,
+              reiciendis nobis unde?
+              Quae eius odit nesciunt odio vel quasi corporis laboriosam et culpa perspiciatis? Quae ullam libero
+              cumque, provident officiis minima aut eveniet rem aspernatur illo, sequi impedit voluptates? Fugiat,
+              soluta optio?
+              Iste perferendis blanditiis repellat consequuntur sit similique nostrum, totam aut animi consequatur vel
+              cum aperiam dolores rerum corporis rem deleniti, dolorem voluptatibus dolor doloremque consectetur
+              facere incidunt at. Mollitia, officia.
+            </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide section">
+            <div class="swiper-slide-div-img">
+              <img src="assets/images/event_img/hackathon2024Flyer.jpg" alt="Etomchukwu Avatar" class="swiper-slide-img" />
+            </div>            <div class="swiper-group-text">
+            <p>Last.
+              Rem facere magni corporis repellendus, doloremque odio dignissimos eum tenetur ut ipsa beatae doloribus
+              inventore dicta esse excepturi fugiat tempora aperiam deleniti.
+              Velit quo nam, est doloribus deleniti dolor quasi sunt, voluptate vel dolores debitis nesciunt!
+              Provident cupiditate sequi corrupti, dolores nihil dignissimos est vel beatae dolorem laudantium, ipsam,
+              reiciendis nobis unde?
+              Quae eius odit nesciunt odio vel quasi corporis laboriosam et culpa perspiciatis? Quae ullam libero
+              cumque, provident officiis minima aut eveniet rem aspernatur illo, sequi impedit voluptates? Fugiat,
+              soluta optio?
+              Iste perferendis blanditiis repellat consequuntur sit similique nostrum, totam aut animi consequatur vel
+              cum aperiam dolores rerum corporis rem deleniti, dolorem voluptatibus dolor doloremque consectetur
+              facere incidunt at. Mollitia, officia.
+            </p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <img src="assets/images/ticLogoTransparent.png" alt="TIC Logo">
+      <p class="footer__description">
+        Whether you're passionate about emerging technologies, coding, or robotics, our club offers a platform
+        for you to learn, innovate, and make a meaningful impact.
+      </p>
+    </div>
+
+    <!-- club social media links -->
+    <div class="footer__links">
+      <a href="https://www.linkedin.com/company/technology-innovation-club/" target="_blank"><img
+          src="assets/icons/linkedin-fill.svg" alt="LinkedIn" /></a>
+      <a href="https://www.instagram.com/tech_innovation_club?igsh=c25nbHBxcXp3eXVr" target="_blank"><img
+          src="assets/icons/instagram.svg" alt="Instagram" /></a>
+      <a href="https://x.com/tic_pau" target="_blank"><img src="assets/icons/devicon_twitter.svg" alt="Twitter" /></a>
+      <a href="https://github.com/Technology-Innovation-Club" target="_blank"><img src="assets/icons/codicon_github.svg"
+          alt="Github" /></a>
+    </div>
+
+    <hr class="footer__divider" />
+    <p class="footer__copyright">&copy; 2024 Tech Innovation Club</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+  <script src="events.js"></script>
+</body>
+
 </html>
